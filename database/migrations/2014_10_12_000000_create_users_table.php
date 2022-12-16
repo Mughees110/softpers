@@ -15,12 +15,12 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->longText('name')->nullable();
-            $table->longText('rollNumber')->nullable();
-            $table->longText('class')->nullable();
-            $table->longText('department')->nullable();
-            $table->longText('title')->nullable();
-            $table->longText('document_id')->nullable();
+            $table->string('name')->nullable();
+            $table->string('rollNumber')->nullable();
+            $table->string('class')->nullable();
+            $table->string('department')->nullable();
+            $table->string('title')->nullable();
+            $table->string('document_id')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
